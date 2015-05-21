@@ -1,4 +1,10 @@
 ﻿define(["jquery"],function ($) {
+    window.getParameterByName = function (name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
 
     var init = function () {
         window.blogs = [{
@@ -25,12 +31,7 @@
             file: ""
 
         }];
-        window.getParameterByName=function (name) {
-            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }
+    
         
 
         $("div[part]").each(function () {
@@ -49,10 +50,25 @@
 
         $("#div_blogList").html(htmlOutput2);
     };
+    var cur = getParameterByName("file");
+ 
+    var InitPost=function() {
+   
+       
+        $.ajax({
+            url: "data/posts/" + cur,
+            dataType: "text",
+            success: function(rst) {
+                $("#content").html(rst);
+            }
+        });
+     
+    }
 
     return {
 
-        init: init
+        init: init,
+        InitPost: InitPost
     };
 
 });

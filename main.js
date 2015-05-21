@@ -12,27 +12,28 @@ require.config({
     shim: {
         'bootstrap': {
             deps: ['jquery'],
-            exports: "Bootstrap"
+            exports: "bootstrap"
+        },
+        'jsrender': {
+            deps: ['jquery'],
+            exports: "jsrender"
         },
         "blogs": {
             exports: "blogs"
         },
-
+        "cleanblog": {
+            deps: ['jquery', 'bootstrap'],
+            exports: "cleanblog"
+        },
         "common": {
-            deps: ['jquery'],
+            deps: ['jquery',"jsrender"],
             exports: "common"
         }
 
     }
 });
-//scripts/common.js    <script src="scripts/external/jsrender.min.js"></script>
-requirejs(["jquery", "bootstrap", "jsrender", "common", "cleanblog"], function ($, s, _, c) {
-    //This function is called when scripts/helper/util.js is loaded.
-    //If util.js calls define(), then this function is not fired until
-    //util's dependencies have loaded, and the util argument will hold
-    //the module value for "helper/util".
-    c.init();
+
+requirejs(['jquery','bootstrap','jsrender', "common"], function (a,b,c,d, e) {
+   
+    d.init();
 });
-//require(['jquery'], function ($) {
-//    alert($().jquery);
-//});
