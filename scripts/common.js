@@ -1,5 +1,4 @@
-﻿
-define(function () {
+﻿define(["jquery"],function ($) {
 
     var init = function () {
         window.blogs = [{
