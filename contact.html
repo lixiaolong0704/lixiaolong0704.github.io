@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>孙雷博首页</title>
+    <title>Clean Blog - Contact</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
- 
+
 </head>
 
 <body>
@@ -36,14 +36,14 @@
     <div part="common/nav.html"></div>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>520 我爱你</h1>
+                    <div class="page-heading">
+                        <h1>联系我</h1>
                         <hr class="small">
-                        <span class="subheading">动如脱兔，静茹瘫痪</span>
+                        <span class="subheading">求包养*</span>
                     </div>
                 </div>
             </div>
@@ -54,31 +54,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-               
-                <script id="blogsList" type="text/x-jsrender">
-                
-                    
-                    <div class="post-preview">
-                        <a href="post.html?file={{:file}}">
-                            <h2 class="post-title">
-                              {{:title}}
-                            </h2>
-                            <h3 class="post-subtitle">
-                                {{:subtitle}}
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#">孙雷博</a> on   {{:date}}</p>
-                    </div>
-                    <hr>
-                </script>  
-                <div id="div_blogList"> </div>
+                <p>秋风清，秋月明,落叶聚还散,寒鸦栖复惊。相亲相见知何日，此时此夜难为情；
+入我相思门，知我相思苦，长相思兮长相忆，短相思兮无穷极，
+早知如此绊人心，何如当初莫相识.</p>
            
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
+                <ul>
+                    <li>孙雷博</li>
+                    <li>QQ:823781197</li>
+                    <li>Email:sunleibo.home@gmail.com</li>
+                    <li>CSDN: <a href="http://blog.csdn.net/sunleibo">http://blog.csdn.net/sunleibo</a></li>
+                    <li>Github: <a href="https://github.com/lixiaolong1990">https://github.com/lixiaolong1990</a> </li>
                 </ul>
+                
+
             </div>
         </div>
     </div>
@@ -86,10 +74,9 @@
     <hr>
 
     <div part="common/footer.html"></div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <script src="scripts/external/jsrender.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -99,19 +86,6 @@
 
     <script src="scripts/common.js"></script>
     
-    <script src="data/blogs.js"></script>
-    <script>
-        $(function() {
-            //var htmlOutput = $("#blogsList").render(window.blogs);
-            //$("#div_blogList").html(htmlOutput);
-
-            var template = $.templates("#blogsList");
-            var htmlOutput2 = template.render(window.blogs);
-
-            $("#div_blogList").html(htmlOutput2);
-        });
-
-    </script>
 
 </body>
 
