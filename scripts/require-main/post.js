@@ -1,12 +1,10 @@
 ﻿
 require.config({
     paths: {
-        jquery: 'scripts/external/jquery-2.0.3.min',
+        jquery: 'scripts/external/jquery-1.10.2.min',
         bootstrap: 'scripts/external/bootstrap.min',
         jsrender: 'scripts/external/jsrender.min',
         cleanblog: 'js/clean-blog.min',
-       
-        //blogs: 'data/blogs.js',
         common: 'scripts/common'
     },
     shim: {
@@ -26,14 +24,14 @@ require.config({
             exports: "cleanblog"
         },
         "common": {
-            deps: ['jquery',"jsrender"],
+            deps: ['jquery', "jsrender"],
             exports: "common"
         }
 
     }
 });
 
-requirejs(['jquery','bootstrap','jsrender', "common"], function (a,b,c,d, e) {
-   
+requirejs(['jquery', 'bootstrap', 'jsrender', "common"], function (a, b, c, d, e) {
     d.init();
+    d.InitPost();
 });

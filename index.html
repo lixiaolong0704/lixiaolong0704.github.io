@@ -1,67 +1,233 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>孙雷博首页</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-    <script data-main="main" src="scripts/external/require.js"></script>
-</head>
-<body>
-    <div part="common/nav.html"></div>
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>520 我爱你</h1>
-                        <hr class="small">
-                        <span class="subheading">动如脱兔，静茹瘫痪</span>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>孙雷博首页</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/clean-blog.min.css" rel="stylesheet">
+        <style>
+
+            /*top----------------------*/
+            .top {
+                background-color: #00BCBE;
+                color: beige;
+            }
+
+            .top small { color: beige; }
+
+            /*skill-------------------------*/
+
+            .skill {
+                background-color: #EEEEEE;
+                text-align: center;
+            }
+
+            .skill img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .skill_el {
+                /*margin-top: 15px;*/
+                display: inline-block;
+                margin: 25px;
+            }
+
+            /*exper-------------------*/
+
+            .exper {
+                background-color: white;
+                text-align: center;
+            }
+
+            /*footer*/
+
+            .footer {
+                text-align: center;
+                background-color: #00BCBE;
+                color: beige;
+                font-size: 14px;
+            }
+
+            .footer ul { margin-top: 25px; }
+
+            .footer li {
+
+                height: 25px;
+                line-height: 25px;
+            }
+
+            /*other--------------------*/
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                font-family: "微软雅黑";
+            }
+
+            p {
+                font-size: 14px;
+                color: wheat;
+            }
+        </style>
+        <script data-main="scripts/require-main/index" src="scripts/external/require.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row top">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="text-align: center"><h2>关于我<br /><small>a intruction about myself</small></h2></div>
+                <div class="col-sm-4"></div>
+
+
+            </div>
+            <div class="row top">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <h3>孙雷博<br/><small>优秀的判断力来自经验，但经验来自于错误的判断</small></h3>
+                    <p>语言:C# .winform.  wpf. asp.net mvc框架Ibatis EF
+                        Javascript html css. jquery .dojo spine.mvc. boostrap3 html5 less.js
+                        Java.  android手机开发 C++
+                        软件
+                        数据库: SQL Server .Access.Oracle. Mysql Firebird.
+                        开发工具:  vs  . Ecplise    vss . Svn
+                    </p>
+                </div>
+          
+                <div class="col-sm-7"></div>
+
+
+            </div>
+            <div class="row skill">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="text-align: center"><h2>成为我的客户<br /><small>
+                                                                                     我们的服务您一定值得信赖
+                                                                                 </small></h2></div>
+                <div class="col-sm-4"></div>
+
+
+            </div>
+            <div class="row skill">
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>网站开发</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>企业系统开发</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>Android手机App开发</label>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+       
 
-                <script id="blogsList" type="text/x-jsrender">
-
-
-                    <div class="post-preview">
-                        <a href="post.html?file={{:file}}">
-                            <h2 class="post-title">
-                                {{:title}}
-                            </h2>
-                            <h3 class="post-subtitle">
-                                {{:subtitle}}
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#">孙雷博</a> on   {{:date}}</p>
+            <div class="row skill">
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>Html5 微信开发</label>
                     </div>
-                    <hr>
-                </script>
-                <div id="div_blogList"> </div>
-
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">返回 &rarr;</a>
-                    </li>
-                </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>Html5 微信开发</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill_el">
+                        <img src="img/temp.png" />
+                        <br />
+                        <label>Html5 微信开发</label>
+                    </div>
+                </div>
+       
+            </div>
+            
+            
+            <div class="row exper">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="text-align: center"><h2>工作经验<br /><small>I can say i'm very good at</small></h2></div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>爱立信IPTV MediaRoom 项目</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>IPTV MediaRoom最初为微软的IPTV网络电视项目，后卖给爱立信，该项目主要为广电提供基于网络的视频服务。目前该项目的客户全部为国外客户，产品在中国开发</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>Wipace 智能体感游戏平台</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>微跑品牌推出的第一个产品是一款面向运动健康和体感游戏的智能运动鞋，该款智能运动鞋通过在普通运动鞋内部嵌入传感器，采集人体运动信息并进一步推算出卡 路里消耗、识别不同的人体动作，以完成与PC、手机等智能终端的人机交互，让人通过运动的方式体验游戏，在游戏的过程中形成运动量，从而达到健康游戏、有趣运动的目的.</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>OMS系统</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>北京住房公积金.等财务管理的系统</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>中国银行的网银系统</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>中国银行的网银系统1.5版本,系统是用js开发的富客户端应用，单页面程序，对以前的网银版本界面进行了优化，提高了用户体验。</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>北京视博云科技有限责任公司</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>中心网站管理系统包括，部署管理 平台监控 应用管理 系统管理四部分功能，主要实现对与游戏平台上游戏的安装卸载管理配置功能和对服务器分前端管理的功能。底层调用c++写的基础架构对游戏安装包等应用进行 安装卸载，和服务器管理等基本操作。后台数据有中行内部开发，前端负责调用后台接口，全部使用ajax实现。</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>网格化管理</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>网格化管理这一创新社会管理模式，实现上下级、部门之间数据共享、信息共用、资源整合、动态跟踪、全面覆盖的社会管理新格局。平台具有强大的系统功能，总体分为六大模块，分别为：基础信息模块、服务办事模块、民情日记模块、统计分析模块、系统管理模块。</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>超市进销存管理系统</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>为解决小型超市在业务上需要处理大量的库存信息，并对商品进行销售信息进行统计分析，满足大多数超市需求，主要功能包括：支持多种库存管理支持单仓/多仓或总店/分店管理、商品管理、灵活的条形码设计,支持会员管理、报表统计、操作权限管理 </p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row exper">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><h4>监狱罪犯犯罪评估系统</h4></div>
+                <div class="col-sm-8" style="text-align: left"><p>管理罪犯的犯罪信息，其他的个人信息，同步信息数据，并且用客户端根据犯罪记录依靠评估犯罪的算法，生成罪犯犯罪评估试卷 .</p></div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row footer">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <ul style="list-style-type: none">
+                        <li>孙雷博</li>
+                        <li>QQ:823781197</li>
+                        <li>Email:sunleibo.home@gmail.com</li>
+                        <li>CSDN: <a href="http://blog.csdn.net/sunleibo">http://blog.csdn.net/sunleibo</a></li>
+                        <li>Github: <a href="https://github.com/lixiaolong1990">https://github.com/lixiaolong1990</a> </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2"></div>
             </div>
         </div>
-    </div>
-    <hr>
-    <div part="common/footer.html"></div>
-
-</body>
+    </body>
 </html>
