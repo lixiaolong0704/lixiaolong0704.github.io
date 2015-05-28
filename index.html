@@ -8,7 +8,10 @@
         <meta name="author" content="">
         <title>SCODER 工作室</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-      
+
+
+        <script src="js/jquery-2.0.0.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
         <style>
 
             /*top----------------------*/
@@ -84,7 +87,13 @@
                 color: #666666;
             }
         </style>
-        <script data-main="scripts/require-main/index" src="scripts/external/require.js"></script>
+        <script>
+            $(function() {
+                $("img").lazyload();
+            });
+     
+        </script>
+        <!--<script data-main="scripts/require-main/index" data-original="scripts/external/require.js"></script>-->
     </head>
     <body style='font-family:微软雅黑'>
         <div class="container-fluid">
@@ -123,7 +132,7 @@
                         <label class="label label-default">Firebird </label>
                     </p>
                     <br/>
-                    <img style="width: 180px; height: 180px; margin-top: 10px; margin-bottom: 30px; " src="img/qcode.png" />
+                    <img style="width: 180px; height: 180px; margin-top: 10px; margin-bottom: 30px; " data-original="img/qcode.png" />
                   
                 </div>
           
@@ -143,21 +152,21 @@
             <div class="row skill">
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/ie.png" />
+                        <img data-original="img/ie.png" />
                         <br />
                         <label>网站开发</label>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/sys.png" />
+                        <img data-original="img/sys.png" />
                         <br />
                         <label>企业系统开发</label>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/android.png" />
+                        <img data-original="img/android.png" />
                         <br />
                         <label>Android-App开发</label>
                     </div>
@@ -168,21 +177,21 @@
             <div class="row skill">
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/html5.png" />
+                        <img data-original="img/html5.png" />
                         <br />
                         <label>Html5 微信开发</label>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/app.png" />
+                        <img data-original="img/app.png" />
                         <br />
                         <label>Windows App开发</label>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="skill_el">
-                        <img src="img/maint.png" />
+                        <img data-original="img/maint.png" />
                         <br />
                         <label>系统维护</label>
                     </div>
@@ -199,7 +208,7 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-                 <img src="img/tv.png" />
+                 <img data-original="img/tv.png" />
                     <h4>XXIPTV MediaRoom 项目</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>IPTV MediaRoom最初为微软的IPTV网络电视项目，后卖给爱立信，该项目主要为广电提供基于网络的视频服务。目前该项目的客户全部为国外客户，产品在中国开发</p></div>
                 <div class="col-sm-1"></div>
@@ -207,7 +216,7 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-                    <img src="img/game.png" />
+                    <img data-original="img/game.png" />
                     <h4>XX智能体感游戏平台</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>微跑品牌推出的第一个产品是一款面向运动健康和体感游戏的智能运动鞋，该款智能运动鞋通过在普通运动鞋内部嵌入传感器，采集人体运动信息并进一步推算出卡 路里消耗、识别不同的人体动作，以完成与PC、手机等智能终端的人机交互，让人通过运动的方式体验游戏，在游戏的过程中形成运动量，从而达到健康游戏、有趣运动的目的.</p></div>
                 <div class="col-sm-1"></div>
@@ -215,7 +224,7 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
- <img src="img/cms.png" />
+ <img data-original="img/cms.png" />
                     <h4>OMS系统</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>北京住房公积金.等财务管理的系统</p></div>
                 <div class="col-sm-1"></div>
@@ -223,7 +232,7 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
- <img src="img/fce.png" />
+ <img data-original="img/fce.png" />
                     <h4>中国银行的网银系统</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>中国银行的网银系统1.5版本,系统是用js开发的富客户端应用，单页面程序，对以前的网银版本界面进行了优化，提高了用户体验。</p></div>
                 <div class="col-sm-1"></div>
@@ -231,7 +240,7 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-                    <img src="img/game2.png" />
+                    <img data-original="img/game2.png" />
                     <h4>某游戏开发公司服务器内容管理系统</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>中心网站管理系统包括，部署管理 平台监控 应用管理 系统管理四部分功能，主要实现对与游戏平台上游戏的安装卸载管理配置功能和对服务器分前端管理的功能。底层调用c++写的基础架构对游戏安装包等应用进行 安装卸载，和服务器管理等基本操作。后台数据有中行内部开发，前端负责调用后台接口，全部使用ajax实现。</p></div>
                 <div class="col-sm-1"></div>
@@ -239,21 +248,21 @@
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-    <img src="img/grid.png" />
+    <img data-original="img/grid.png" />
                     <h4>网格化管理</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>网格化管理这一创新社会管理模式，实现上下级、部门之间数据共享、信息共用、资源整合、动态跟踪、全面覆盖的社会管理新格局。平台具有强大的系统功能，总体分为六大模块，分别为：基础信息模块、服务办事模块、民情日记模块、统计分析模块、系统管理模块。</p></div>
                 <div class="col-sm-1"></div>
             </div>
             <div class="row exper">
                 <div class="col-sm-1"></div>
-                <div class="col-sm-2"><img src="img/market.png" /><h4>超市进销存管理系统</h4></div>
+                <div class="col-sm-2"><img data-original="img/market.png" /><h4>超市进销存管理系统</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>为解决小型超市在业务上需要处理大量的库存信息，并对商品进行销售信息进行统计分析，满足大多数超市需求，主要功能包括：支持多种库存管理支持单仓/多仓或总店/分店管理、商品管理、灵活的条形码设计,支持会员管理、报表统计、操作权限管理 </p></div>
                 <div class="col-sm-1"></div>
             </div>
             <div class="row exper">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-<img src="img/prison.png" />
+<img data-original="img/prison.png" />
                     <h4>监狱罪犯犯罪评估系统</h4></div>
                 <div class="col-sm-8" style="text-align: left"><p>管理罪犯的犯罪信息，其他的个人信息，同步信息数据，并且用客户端根据犯罪记录依靠评估犯罪的算法，生成罪犯犯罪评估试卷 .</p></div>
                 <div class="col-sm-1"></div>
